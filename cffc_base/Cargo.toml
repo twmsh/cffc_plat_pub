@@ -1,0 +1,52 @@
+[package]
+name = "cffc_base"
+version = "0.1.0"
+authors = ["tom <twm@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "cffc_base"
+path = "src/lib.rs"
+
+[dependencies]
+
+tokio = { version = "0.2.22", features = ["full"] }
+
+log4rs = "0.13.0"
+log = "0.4.11"
+openssl = { version = "0.10", features = ["vendored"] }
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.58"
+rusqlite = { version = "0.24.1", features = ["bundled", "chrono"] }
+
+http = "0.2.1"
+bytes = "0.5.6"
+reqwest = { version = "0.10", features = ["json"] }
+signal-hook = "0.1.16"
+jsonrpc-core = "15.1.0"
+tera = "1.5.0"
+
+actix-multipart = "0.3"
+actix-http = "2.0.0"
+futures = "0.3.1"
+
+crossbeam = "0.8.0"
+actix-web = "3.1.0"
+
+deadqueue = "0.1.0"
+
+lazy_static = "1.4.0"
+pnet = "0.26.0"
+
+base64 = "0.13.0"
+fs2 = "0.4.3"
+
+rust-crypto = "^0.2"
+url = "2.2.0"
+
+image = "0.23.12"
+
+indexmap = "1.6.1"

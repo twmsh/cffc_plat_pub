@@ -1,0 +1,26 @@
+{
+  "threads": 1,
+  "count": 4,
+  "url": "http://192.168.1.220:7002",
+  "top": 3,
+  "threshold": 70,
+  "db": "56e6a47c-3d4d-4f99-b6a3-ca24028358df",
+  "data": [
+    {
+      "file": "/Users/tom/temp/1n_bench/twm.jpeg",
+      "uuid": "06e1e339-1f6a-4ea2-8efd-76a84ef0ab24"
+    },
+    {
+      "file": "/Users/tom/temp/1n_bench/hcg.jpeg",
+      "uuid": "cc7e73e8-19bd-4295-ae89-cd3f827b9946"
+    },
+    {
+      "file": "/Users/tom/temp/1n_bench/xwx.jpeg",
+      "uuid": "33843bdc-2fb6-4dc7-9586-dc9a51ac2f3e"
+    },
+    {
+      "file": "/Users/tom/temp/1n_bench/zcs.jpeg",
+      "uuid": "a884b1bb-eec0-491e-8e4d-ec560d2b9160"
+    }
+  ]
+}

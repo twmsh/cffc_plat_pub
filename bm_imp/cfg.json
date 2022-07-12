@@ -1,0 +1,40 @@
+{
+  "log": {
+    "file": "imp.log",
+    "level": "info",
+    "lib_level": "warn"
+  },
+  "recog": {
+    "url": "http://localhost:7002",
+    "db_sid": "56e6a47c-3d4d-4f99-b6a3-ca24028358df",
+    "helper": [
+      "http://localhost:7002"
+    ]
+  },
+  "imp": {
+    "img_dir": "test_imgs",
+    "file_ext": [
+      "jpg",
+      "jpeg",
+      "png",
+      "bmp"
+    ],
+    "imp_tag": "",
+    "sex_fromid": true,
+    "test": true,
+    "threshold": 70,
+    "pattern": "(.*)_(男|女)_([0-9]{15,18}[x|X]{0,1})_(.*)$",
+    "props": [
+      "name",
+      "sex",
+      "idcard",
+      "memo"
+    ]
+  },
+  "db_url": "file:../cfbm.db?_loc=auto",
+  "df_imgs": "../df_imgs",
+  "detect_worker": 16,
+  "create_worker": 4,
+  "create_batch": 4,
+  "save_batch": 8
+}

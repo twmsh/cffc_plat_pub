@@ -1,0 +1,78 @@
+{
+  "version": {
+    "product": "cffc_plat",
+    "ver": "0.3.0",
+    "api_ver": "1.2.1"
+  },
+  "log": {
+    "file": "logs/bm_worker.log",
+    "level": "info",
+    "lib_level": "warn"
+  },
+  "http_port": 8090,
+  "live_port": 8554,
+  "df_imgs": "../df_imgs",
+  "dfimg_url": "/getsingleimg",
+  "api": {
+    "grab_url": "http://localhost:7001",
+    "recg_url": "http://localhost:7002"
+  },
+  "db": {
+    "url": "file:../cfbm.db?_loc=auto",
+    "tz": "Asia/Shanghai"
+  },
+  "notify_proc": {
+    "debug": false,
+    "skip_search": false,
+    "search_worker": 2,
+    "search_batch": 4,
+    "facetrack": {
+      "wl_alarm": false,
+      "recv_mode": {
+        "fast": false,
+        "count": 3,
+        "quality": 0.9
+      },
+      "clear_delay": 180000,
+      "ready_delay": 1000
+    },
+    "cartrack": {
+      "wl_alarm": false,
+      "recv_mode": {
+        "fast": false,
+        "count": 3,
+        "quality": 0.9
+      },
+      "clear_delay": 180000,
+      "ready_delay": 1000
+    }
+  },
+  "ws": {
+    "batch": 12
+  },
+  "web": {
+    "notify_url": "http://localhost:${http_port}/trackupload",
+    "client_node": {
+      "sid": "7d4f2f62-0f7e-4a80-882c-08fa65e700f0",
+      "url": "http://localhost:7001"
+    },
+    "server_node": {
+      "sid": "3b08100a-d1a0-4a27-8c7d-4c6aa2caa0fa",
+      "url": "http://localhost:7002"
+    },
+    "face_black_db": "56e6a47c-3d4d-4f99-b6a3-ca24028358df",
+    "face_white_db": "aee4a866-bda7-4019-9c37-8b98a37e4ad5",
+    "car_black_group": "55a1a073-aa94-408a-b891-47b429c9a161",
+    "car_white_group": "65df24e6-827a-46c7-8843-92c55aa76015",
+    "upload_url": "/upload/",
+    "upload_path": "INSTDIR/bm_worker/static/upload",
+    "use_debug_stream": false
+  },
+  "disk_clean": {
+    "enable": true,
+    "avail_size_m": 1024,
+    "clean_ft_batch": 800,
+    "clean_ct_batch": 800,
+    "interval_minute": 2
+  }
+}

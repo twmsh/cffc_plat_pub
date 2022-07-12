@@ -1,0 +1,21 @@
+[package]
+name = "bm_tool"
+version = "0.1.0"
+authors = ["tom <twm@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33.3"
+cffc_base = { version = "0.1.0", path = "../cffc_base" }
+bm_worker = { version = "0.1.0", path = "../bm_worker" }
+
+rusqlite = { version = "0.24.1", features = ["bundled", "chrono"] }
+tokio = { version = "0.2.22", features = ["full"] }
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0.58", features = ["preserve_order"] }
+uuid = { version = "0.8", features = ["serde", "v4"] }
+
+chrono = { version = "0.4", features = ["serde"] }

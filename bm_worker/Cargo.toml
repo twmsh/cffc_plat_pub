@@ -1,0 +1,51 @@
+[package]
+name = "bm_worker"
+version = "0.1.0"
+authors = ["tom <twm@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+cffc_base = { version = "0.1.0", path = "../cffc_base" }
+
+log = "0.4.11"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0.58", features = ["preserve_order"] }
+
+clap = "2.33.3"
+
+rusqlite = { version = "0.24.1", features = ["bundled", "chrono"] }
+crossbeam = "0.8.0"
+
+actix-web = { version = "3.1.0", features = ["secure-cookies"] }
+actix-multipart = "0.3.0"
+
+chrono = { version = "0.4", features = ["serde"] }
+signal-hook = "0.1.16"
+
+dashmap = "3.11.10"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+
+tokio = { version = "0.2.22", features = ["full"] }
+base64 = "0.13.0"
+
+deadqueue = "0.1.0"
+regex = "1.4.2"
+bytes = "0.5.6"
+
+actix-files = "0.4.1"
+tera = "1.5.0"
+
+actix-service = "1.0.6"
+
+futures = "0.3.1"
+time = "0.2.23"
+
+actix = "0.10.0"
+actix-web-actors = "3.0.0"
+rand = "0.8.0"
+
+image = "0.23.12"
+jsonwebtoken = "7"

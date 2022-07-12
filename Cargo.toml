@@ -1,0 +1,3 @@
+[workspace]
+
+members = ["cffc_base", "bm_worker", "bm_imp", "bm_tool"]

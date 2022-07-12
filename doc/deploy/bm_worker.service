@@ -1,0 +1,14 @@
+[Unit]
+Description=bm_worker
+After=rc-local.service
+
+[Service]
+Restart=always
+User=linaro
+WorkingDirectory=INSTDIR/bm_worker
+ExecStart=INSTDIR/bm_worker/bm_worker
+StandardOutput=null
+StandardError=syslog
+
+[Install]
+WantedBy=basic.target
